@@ -1,0 +1,17 @@
+﻿<h3>MyListComponent</h3>
+
+@code {
+
+}
+<!-- MyListComponent.razor -->
+
+<ul>
+    @foreach (var item in items)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+@code {
+    List<string> items = new List<string> { "Elemento 1", "Elemento 2", "Elemento 3" };
+}
